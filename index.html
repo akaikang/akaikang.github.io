@@ -51,45 +51,50 @@
 					</header>
 					<div class="container">
 						<div class="row">
-							<div class="4u 12u(mobile)">
-								<section class="box style1">
-									<span class="icon featured fa-comments-o"></span>
-									<h3>Dynamic Backlight Scaling</h3>
-									<p>Minimizes the backlight's energy consumption when displaying video streams on mobile devices without adversely impacting the user's visual experience.<br><br>
-									<a target="_blank" style="font-size: larger" href="https://www.youtube.com/watch?v=sWr9YRyxRQ8">Demo</a> </p>
-									
-								</section>
-							</div>
+											<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image centered"><img style="margin:1em auto 1em auto; height: 70%" src="images/CURA.png" alt="" /></a>
+									<h3>Catch Your Attention!</h3>
+									<p>Explores how to reduce the OLED power consumption by exploiting visual attention.<br><br>
+									<a target="_blank" style="font-size: larger" href="pdf/cura.pdf">Poster</a></p>
+								</article>
+							</div>	
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image centered"><img style="margin:1em auto 1em auto; width: 40%; height: 40%" src="images/wwc.png" alt="" /></a>
-									<h3><a href="#">Win-Win Camera!</a></h3>
-									<p>Existing OLED power-saving techniques change user's visual experience or degrade image's visual quality in exchange for power reduction.<br>
-									Is there a scheme that always enhances image quality and reduces power consumption simultaneously?<br><br>
+									<a href="#" class="image centered"><img style="margin:1em auto 1em auto;  height: 70%" src="images/wwc.png" alt="" /></a>
+									<h3>Win-Win Camera!</h3>
+									<p> A scheme that always enhances image quality and reduces power consumption simultaneously!!<br><br>
 									<a target="_blank" style="font-size: larger" href="pdf/wwc.pdf">Poster</a>&emsp;
 									<a target="_blank" style="font-size: larger" href="https://youtu.be/OXu0gRaivPc">Demo(Koda)</a>&emsp;
 									<a target="_blank" style="font-size: larger" href="https://youtu.be/heSQ10dKeeg">Demo</a></p>
 								</article>
 							</div>	
+	
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image centered"><img style="margin:1em auto 1em auto; width: 70%; height: 70%" src="images/CURA.png" alt="" /></a>
-									<h3><a href="#">Catch Your Attention!</a></h3>
-									<p>Explores how to reduce the OLED power consumption by exploiting visual attention.<br><br>
-									<a target="_blank" style="font-size: larger" href="pdf/cura.pdf">Poster</a></p>
+									<a href="#" class="image centered"><img style="margin:1em auto 1em auto; height: 70%" src="images/spl.png" alt="" /></a>
+									<h3>Self-Powered Pattern Locking</h3>
+									<p>A hardware/software co-design to support atomic operations on NVP-based systems.
+									<br><br>
+									<a target="_blank" style="font-size: larger" href="pdf/ISLPED.pdf">Poster</a>&emsp;
+									<a target="_blank" style="font-size: larger" href="https://youtu.be/IHbm-gAzy30">Demo</a></p>
 								</article>
-							</div>							
-							<div class="4u 12u(mobile)">
-								<section class="box style1">
-									<span class="icon featured fa-thumbs-o-up"></span>
-									<h3>Feugiat posuere</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
 							</div>
+
+							<div class="4u 12u(mobile)">
+								<section class="box style2">
+									<a href="#" class="image centered"><img style="margin:1em auto 1em auto; height: 70%" src="images/dbs.png" alt="" /></a>
+									<h3>Dynamic Backlight Scaling</h3>
+									<p>Minimizes the backlight's energy consumption when displaying video streams on mobile devices without adversely impacting the user's visual experience.<br><br>
+									<a target="_blank" style="font-size: larger" href="https://www.youtube.com/watch?v=sWr9YRyxRQ8">Demo</a> </p>
+									
+								</section>
+							</div>						
+
 						</div>
 					</div>
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<p></p>
 					</footer>
 				</article>
 			</div>
@@ -222,7 +227,14 @@
 			<script src="assets/js/bibtex_js.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/masonry.pkgd.min.js"></script>
 			<bibtex src="publications.bib"></bibtex>
+			<script>
+				$('.grid').masonry({
+				  itemSelector: '.grid-item',
+				  columnWidth: 160
+				});
+			</script>
 
 	</body>
 </html>
