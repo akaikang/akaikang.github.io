@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/modola.css" />
+		<link rel="stylesheet" href="assets/fancybox-2.1.7/source/jquery.fancybox.css" type="text/css" media="screen" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -46,13 +48,13 @@
 			<div class="wrapper style2">
 				<article id="work">
 					<header>
-						<h1><strong>Projects</strong></h1>					
+						<h1><strong>Projects</strong></h1>
 					</header>
 					<div class="container">
 						<div class="row">
-											<div class="4u 12u(mobile)">
+							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="images/CURA.png" class="image centered"><img style="height: 100%" src="images/CURA.png" alt="" /></a>
+									<a class="image centered"><img style="height: 100%" src="images/CURA.png" alt="" /></a>
 									<h3>Catch Your Attention!</h3>
 									<p>Explores how to reduce the OLED power consumption by exploiting visual attention.<br><br>
 									<a target="_blank" style="font-size: larger" href="pdf/cura.pdf">Poster</a></p>
@@ -60,7 +62,8 @@
 							</div>	
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="images/wwc.png" class="image centered"><img style="height: 100%" src="images/wwc.png" alt="" /></a>
+<!--									<a href="images/wwc.png" class="image centered"><img style="height: 100%" src="images/wwc.png" alt="" /></a>-->
+									<a class="fancybox" rel="group" href="images/wwc.png"><img style="height: 13em" src="images/wwc.png" alt="" /></a>
 									<h3>Win-Win Camera!</h3>
 									<p> A scheme that always enhances image quality and reduces power consumption simultaneously!!<br><br>
 									<a target="_blank" style="font-size: larger" href="pdf/wwc.pdf">Poster</a>&emsp;
@@ -71,7 +74,7 @@
 	
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="images/spl.png" class="image centered"><img style="height: 100%" src="images/spl.png" alt="" /></a>
+									<a id="single_1" href="images/spl.png" class="image centered"><img style="height: 100%" src="images/spl.png" alt="" /></a>
 									<h3>Self-Powered Pattern Locking</h3>
 									<p>A hardware/software co-design to support atomic operations on NVP-based systems.
 									<br>
@@ -102,7 +105,7 @@
 			<div class="wrapper style3">
 				<article id="Publications">
 					<header>
-						<h1><strong>Publications.</strong></h1>	
+						<h1><strong>Publications</strong></h1>	
 					</header>
 					
 					<div class="container">
@@ -134,7 +137,6 @@
 					
 						
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 					</footer>
 				</article>
 			</div>
@@ -143,11 +145,12 @@
 			<div class="wrapper style4">
 				<article id="contact" class="container 75%">
 					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.</p>
+						<h2>BalalaBalalaBalala </h2>
+						<p>BalalaBalalaBalalaBalala</p>
 					</header>
 					<div>
 						<div class="row">
+<!--
 							<div class="12u">
 								<form method="post" action="#">
 									<div>
@@ -180,6 +183,7 @@
 									</div>
 								</form>
 							</div>
+-->
 						</div>
 						<div class="row">
 							<div class="12u">
@@ -226,14 +230,16 @@
 			<script src="assets/js/bibtex_js.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/masonry.pkgd.min.js"></script>
+			<script src="assets/js/imgmodal.js"></script>
 			<bibtex src="publications.bib"></bibtex>
-			<script>
-				$('.grid').masonry({
-				  itemSelector: '.grid-item',
-				  columnWidth: 160
-				});
-			</script>
+			<script src="assets/fancybox-2.1.7/lib/jquery.mousewheel.pack.js"></script> 
+			<script type="text/javascript" src="assets/fancybox-2.1.7/source/jquery.fancybox.pack.js"></script>
+				
+<script type="text/javascript">
+$(document).ready(function() {
+$(".fancybox").fancybox();
+});
+</script>
 
 	</body>
 </html>
