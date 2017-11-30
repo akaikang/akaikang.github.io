@@ -346,14 +346,14 @@ body.fancybox-iosfix {
 .fancybox-navigation button:before {
   content: "";
   position: absolute;
-  top: 30px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  background: rgba(30, 30, 30, 0.6); }
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  background: rgba(50, 50, 50, 0.6); }
 
 .fancybox-navigation .fancybox-button--arrow_left {
-  left: 0; }
+left: 0; }
 
 .fancybox-navigation .fancybox-button--arrow_right {
   right: 0; }
